@@ -71,7 +71,7 @@ export class RegistroPageActions {
             }).toPass({
                 // Opciones de polling:
                 intervals: [1000, 2000, 5000], // Intervalos entre intentos (en milisegundos)
-                timeout: 10000                 // Tiempo total máximo que durará el polling (10 segundos)
+                timeout: 15000                 // Tiempo total máximo que durará el polling (15 segundos)
             });**/
     }
 
@@ -80,7 +80,7 @@ export class RegistroPageActions {
      * @param locator - Localizador del elemento a verificar
      */
     async expectEstadoAprobado(): Promise<void> {
-        await expect(this.locators.estadoBox).toContainText('Estado: APROBADO', { timeout: 20000 });
+        await expect(this.locators.estadoBox).toContainText('Estado: APROBADO', { timeout: 15000 });
         await capture(this.page, 'Transferencia exitosamente'); 
         /** 
          await expect(async () => {
@@ -88,7 +88,7 @@ export class RegistroPageActions {
         }).toPass({
             // Opciones de polling:
             intervals: [1000, 2000, 5000], // Intervalos entre intentos (en milisegundos)
-            timeout: 10000                 // Tiempo total máximo que durará el polling (10 segundos)
+            timeout: 15000                 // Tiempo total máximo que durará el polling (15 segundos)
         });**/
     }
 
