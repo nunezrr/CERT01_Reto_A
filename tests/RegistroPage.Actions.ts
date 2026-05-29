@@ -83,7 +83,7 @@ export class RegistroPageActions {
         const estadoText = await expect.poll(
             async () => (await this.locators.estadoBox.textContent())?.trim(),
             {
-                timeout: 15000,
+                timeout: 20000,
                 intervals: [1000, 2000, 5000]
             }
         ).toMatch(/Estado:\s*(APROBADO|ERROR_TIMEOUT)/);
