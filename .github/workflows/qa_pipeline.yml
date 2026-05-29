@@ -45,10 +45,8 @@ jobs:
           timeout 120 bash -c 'until curl -fsS http://localhost:3000/health >/dev/null; do sleep 2; done'
 
       - name: 7. Ejecutar pruebas Playwright
-        run: |
-          cd tests
-          npm run test
-        #timeout-minutes: 5  # 5 minutos para todas las pruebas
+        run: npx playwright test
+        timeout-minutes: 5
 
       - name: 8. Cargar Reporte de Pruebas
         if: always()
