@@ -42,7 +42,7 @@ test('TransferenciaMultiple', async ({ page }) => {
       await registro.clickButton();
 
       await registro.expectEstadoAprobado();
-      
+            
       await page.reload();
       console.log("El navegador se ha refrescado correctamente luego de la prueba.", usuario.cuenta);
     }

@@ -29,7 +29,7 @@ function resolveSimulation(simulationProfile) {
       return { delayMs: 15000, finalStatus: 'APROBADO', bucket: 'FAST_15' };
     case 'SLOW_TIMEOUT':
       return {
-        delayMs: randomBetween(40000, 60000),
+        delayMs: randomBetween(10000, 15000),
         finalStatus: 'ERROR_TIMEOUT',
         bucket: 'SLOW_TIMEOUT'
       };

@@ -1317,6 +1317,105 @@
       "responseTimeMs": 11034,
       "workerBucket": "RANDOM_FAST",
       "effectiveDelayMs": 11018
+    },
+    "TX-1780086225602": {
+      "target": "123",
+      "amount": "100",
+      "status": "APROBADO",
+      "simulationProfile": "RANDOM",
+      "createdAt": 1780086225602,
+      "processedAt": 1780086233181,
+      "responseTimeMs": 7579,
+      "workerBucket": "RANDOM_FAST",
+      "effectiveDelayMs": 7563
+    },
+    "TX-1780086234075": {
+      "target": "456",
+      "amount": "200",
+      "status": "APROBADO",
+      "simulationProfile": "RANDOM",
+      "createdAt": 1780086234075,
+      "processedAt": 1780086250535,
+      "responseTimeMs": 16460,
+      "workerBucket": "RANDOM_FAST",
+      "effectiveDelayMs": 16444
+    },
+    "TX-1780086251758": {
+      "target": "789",
+      "amount": "300",
+      "status": "APROBADO",
+      "simulationProfile": "RANDOM",
+      "createdAt": 1780086251758,
+      "processedAt": 1780086321929,
+      "responseTimeMs": 70171,
+      "workerBucket": "RANDOM_FAST",
+      "effectiveDelayMs": 14732
+    },
+    "TX-1780087205679": {
+      "target": "123456",
+      "amount": "100",
+      "status": "APROBADO",
+      "simulationProfile": "RANDOM",
+      "createdAt": 1780087205679,
+      "processedAt": 1780087214531,
+      "responseTimeMs": 8852,
+      "workerBucket": "RANDOM_FAST",
+      "effectiveDelayMs": 8814
+    },
+    "TX-1780087225529": {
+      "target": "123",
+      "amount": "100",
+      "status": "APROBADO",
+      "simulationProfile": "RANDOM",
+      "createdAt": 1780087225529,
+      "processedAt": 1780087231841,
+      "responseTimeMs": 6312,
+      "workerBucket": "RANDOM_FAST",
+      "effectiveDelayMs": 6296
+    },
+    "TX-1780087232984": {
+      "target": "456",
+      "amount": "200",
+      "status": "APROBADO",
+      "simulationProfile": "RANDOM",
+      "createdAt": 1780087232984,
+      "processedAt": 1780087304289,
+      "responseTimeMs": 71305,
+      "workerBucket": "RANDOM_FAST",
+      "effectiveDelayMs": 14205
+    },
+    "TX-1780088860611": {
+      "target": "123",
+      "amount": "100",
+      "status": "APROBADO",
+      "simulationProfile": "RANDOM",
+      "createdAt": 1780088860611,
+      "processedAt": 1780088870387,
+      "responseTimeMs": 9776,
+      "workerBucket": "RANDOM_FAST",
+      "effectiveDelayMs": 9497
+    },
+    "TX-1780088871609": {
+      "target": "456",
+      "amount": "200",
+      "status": "APROBADO",
+      "simulationProfile": "RANDOM",
+      "createdAt": 1780088871609,
+      "processedAt": 1780088879930,
+      "responseTimeMs": 8321,
+      "workerBucket": "RANDOM_FAST",
+      "effectiveDelayMs": 8296
+    },
+    "TX-1780088881141": {
+      "target": "789",
+      "amount": "300",
+      "status": "APROBADO",
+      "simulationProfile": "RANDOM",
+      "createdAt": 1780088881141,
+      "processedAt": 1780088887068,
+      "responseTimeMs": 5927,
+      "workerBucket": "RANDOM_FAST",
+      "effectiveDelayMs": 5909
     }
   }
 }

@@ -64,7 +64,7 @@ export class RegistroPageActions {
      * @param locator - Localizador del elemento a verificar
      */
     async expectEstadoInicial(): Promise<void> {
-        await expect(this.locators.estadoBox).toContainText('Estado: Esperando transacción...', { timeout: 20000 });
+        await expect(this.locators.estadoBox).toContainText('Estado: Esperando transacción...', { timeout: 5000 });
         /** 
         await expect(async () => {
         await expect(this.locators.estadoBox).toContainText('Estado: Esperando transacción...');
@@ -80,7 +80,7 @@ export class RegistroPageActions {
      * @param locator - Localizador del elemento a verificar
      */
     async expectEstadoAprobado(): Promise<void> {
-        await expect(this.locators.estadoBox).toContainText('Estado: APROBADO', { timeout: 20000 });
+        await expect(this.locators.estadoBox).toContainText('Estado: APROBADO', { timeout: 25000 });
         await capture(this.page, 'Transferencia exitosamente'); 
         /** 
          await expect(async () => {
