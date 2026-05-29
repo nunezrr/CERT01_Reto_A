@@ -10,9 +10,6 @@ jobs:
   run-automation-suite:
     name: Ejecución de Pruebas y Reporte
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: Reto_A
 
     steps:
       - name: 1. Descargar Código del Repositorio
@@ -52,3 +49,21 @@ jobs:
         run: |
           cd tests
           npm run test
+        #timeout-minutes: 5  # 5 minutos para todas las pruebas
+
+      - name: 8. Cargar Reporte de Pruebas
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: tests/playwright-report/
+          retention-days: 30
+
+      - name: 9. Guardar Logs del Backend
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: backend-logs
+          path: |
+            backend/server.log
+            backend/worker.log
