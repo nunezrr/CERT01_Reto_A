@@ -80,16 +80,27 @@ export class RegistroPageActions {
      * @param locator - Localizador del elemento a verificar
      */
     async expectEstadoAprobado(): Promise<void> {
-        await expect(this.locators.estadoBox).toContainText('Estado: APROBADO', { timeout: 15000 });
-        await capture(this.page, 'Transferencia exitosamente'); 
-        /** 
-         await expect(async () => {
-        await expect(this.locators.estadoBox).toContainText('Estado: APROBADO');
-        }).toPass({
-            // Opciones de polling:
-            intervals: [1000, 2000, 5000], // Intervalos entre intentos (en milisegundos)
-            timeout: 15000                 // Tiempo total máximo que durará el polling (15 segundos)
-        });**/
+        const estadoText = await expect.poll(
+            async () => (await this.locators.estadoBox.textContent())?.trim(),
+            {
+                timeout: 15000,
+                intervals: [1000, 2000, 5000]
+            }
+        ).toMatch(/Estado:\s*(APROBADO|ERROR_TIMEOUT)/);
+
+        const estadoFinal = (await this.locators.estadoBox.textContent())?.trim() ?? '';
+
+        if (estadoFinal.includes('ERROR_TIMEOUT')) {
+            await capture(this.page, 'Transferencia-error-timeout');
+            throw new Error(`La transferencia falló con estado ERROR_TIMEOUT: '${estadoFinal}'.`);
+        }
+
+        if (!estadoFinal.includes('APROBADO')) {
+            await capture(this.page, 'Transferencia-estado-desconocido');
+            throw new Error(`Estado inesperado: '${estadoFinal}'. Se esperaba 'Estado: APROBADO'.`);
+        }
+
+        await capture(this.page, 'Transferencia-exitosa');
     }
 
     // ============ Estados ============

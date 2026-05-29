@@ -29,7 +29,7 @@ function resolveSimulation(simulationProfile) {
       return { delayMs: 15000, finalStatus: 'APROBADO', bucket: 'FAST_15' };
     case 'SLOW_TIMEOUT':
       return {
-        delayMs: randomBetween(10000, 15000),
+        delayMs: randomBetween(40000, 60000),
         finalStatus: 'ERROR_TIMEOUT',
         bucket: 'SLOW_TIMEOUT'
       };
@@ -39,13 +39,13 @@ function resolveSimulation(simulationProfile) {
       const isFast = Math.random() < 0.8;
       if (isFast) {
         return {
-          delayMs: randomBetween(5000, 10000), //Originalmente 10000, ahora entre 5s y 20s para más variabilidad
+          delayMs: randomBetween(5000, 20000), 
           finalStatus: 'APROBADO',
           bucket: 'RANDOM_FAST'
         };
       }
       return {
-        delayMs: randomBetween(10000, 15000), // Originalmente 60000, ahora entre 40s y 60s para más variabilidad
+        delayMs: randomBetween(40000, 60000), 
         finalStatus: 'ERROR_TIMEOUT',
         bucket: 'RANDOM_SLOW_TIMEOUT'
       };
