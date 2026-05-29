@@ -60,7 +60,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: playwright-report
-          path: tests/playwright-report/
+          path: playwright-report/
           retention-days: 30
 
       - name: 9. Guardar Logs del Backend

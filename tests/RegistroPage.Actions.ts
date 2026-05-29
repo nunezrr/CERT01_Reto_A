@@ -80,7 +80,7 @@ export class RegistroPageActions {
      * @param locator - Localizador del elemento a verificar
      */
     async expectEstadoAprobado(): Promise<void> {
-        await expect(this.locators.estadoBox).toContainText('Estado: APROBADO', { timeout: 25000 });
+        await expect(this.locators.estadoBox).toContainText('Estado: APROBADO', { timeout: 15000 });
         await capture(this.page, 'Transferencia exitosamente'); 
         /** 
          await expect(async () => {
