@@ -1,0 +1,14 @@
+{
+  "name": "reto_a",
+  "version": "1.0.0",
+  "description": "Este dia usa una app de clase (simple) para practicar un flujo asincrono end-to-end.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1"
+  }
+}
