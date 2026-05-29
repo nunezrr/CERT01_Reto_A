@@ -1251,6 +1251,72 @@
       "responseTimeMs": 9758,
       "workerBucket": "RANDOM_FAST",
       "effectiveDelayMs": 9733
+    },
+    "TX-1780085405861": {
+      "target": "123456",
+      "amount": "100",
+      "status": "APROBADO",
+      "simulationProfile": "RANDOM",
+      "createdAt": 1780085405861,
+      "processedAt": 1780085418160,
+      "responseTimeMs": 12299,
+      "workerBucket": "RANDOM_FAST",
+      "effectiveDelayMs": 12224
+    },
+    "TX-1780085434725": {
+      "target": "123",
+      "amount": "100",
+      "status": "APROBADO",
+      "simulationProfile": "RANDOM",
+      "createdAt": 1780085434725,
+      "processedAt": 1780085451443,
+      "responseTimeMs": 16718,
+      "workerBucket": "RANDOM_FAST",
+      "effectiveDelayMs": 16702
+    },
+    "TX-1780085715503": {
+      "target": "123456",
+      "amount": "100",
+      "status": "APROBADO",
+      "simulationProfile": "RANDOM",
+      "createdAt": 1780085715503,
+      "processedAt": 1780085723336,
+      "responseTimeMs": 7833,
+      "workerBucket": "RANDOM_FAST",
+      "effectiveDelayMs": 7813
+    },
+    "TX-1780085746774": {
+      "target": "123",
+      "amount": "100",
+      "status": "APROBADO",
+      "simulationProfile": "RANDOM",
+      "createdAt": 1780085746774,
+      "processedAt": 1780085761620,
+      "responseTimeMs": 14846,
+      "workerBucket": "RANDOM_FAST",
+      "effectiveDelayMs": 14827
+    },
+    "TX-1780085762384": {
+      "target": "456",
+      "amount": "200",
+      "status": "APROBADO",
+      "simulationProfile": "RANDOM",
+      "createdAt": 1780085762384,
+      "processedAt": 1780085777677,
+      "responseTimeMs": 15293,
+      "workerBucket": "RANDOM_FAST",
+      "effectiveDelayMs": 15270
+    },
+    "TX-1780085779105": {
+      "target": "789",
+      "amount": "300",
+      "status": "APROBADO",
+      "simulationProfile": "RANDOM",
+      "createdAt": 1780085779105,
+      "processedAt": 1780085790139,
+      "responseTimeMs": 11034,
+      "workerBucket": "RANDOM_FAST",
+      "effectiveDelayMs": 11018
     }
   }
 }
