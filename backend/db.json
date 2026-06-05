@@ -125,6 +125,50 @@
       "responseTimeMs": 42058,
       "workerBucket": "RANDOM_FAST",
       "effectiveDelayMs": 11621
+    },
+    "TX-1780695519405": {
+      "target": "1",
+      "amount": "50",
+      "status": "APROBADO",
+      "simulationProfile": "RANDOM",
+      "createdAt": 1780695519405,
+      "processedAt": 1780695526593,
+      "responseTimeMs": 7188,
+      "workerBucket": "RANDOM_FAST",
+      "effectiveDelayMs": 7094
+    },
+    "TX-1780695547947": {
+      "target": "123456",
+      "amount": "100",
+      "status": "APROBADO",
+      "simulationProfile": "RANDOM",
+      "createdAt": 1780695547947,
+      "processedAt": 1780695566470,
+      "responseTimeMs": 18523,
+      "workerBucket": "RANDOM_FAST",
+      "effectiveDelayMs": 18503
+    },
+    "TX-1780695580472": {
+      "target": "123",
+      "amount": "100",
+      "status": "APROBADO",
+      "simulationProfile": "RANDOM",
+      "createdAt": 1780695580472,
+      "processedAt": 1780695599091,
+      "responseTimeMs": 18619,
+      "workerBucket": "RANDOM_FAST",
+      "effectiveDelayMs": 18576
+    },
+    "TX-1780695600241": {
+      "target": "456",
+      "amount": "200",
+      "status": "ERROR_TIMEOUT",
+      "simulationProfile": "RANDOM",
+      "createdAt": 1780695600241,
+      "processedAt": 1780695621732,
+      "responseTimeMs": 21491,
+      "workerBucket": "RANDOM_SLOW_TIMEOUT",
+      "effectiveDelayMs": 21464
     }
   }
 }
